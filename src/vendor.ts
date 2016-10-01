@@ -9,3 +9,10 @@ import '@angular/router';
 import 'rxjs';
 // Other vendors for example jQuery, Lodash or Bootstrap
 // You can import js, ts, css, sass, ...
+
+import 'leaflet';
+import 'reflect-metadata';
+
+require('../node_modules/bootstrap/dist/css/bootstrap.css');
+require('../node_modules/font-awesome/css/font-awesome.css');
+require('../node_modules/leaflet/dist/leaflet.css');
