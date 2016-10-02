@@ -1,6 +1,6 @@
 {
   "name": "drovideo-frontend",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Web frontend for Drovideo platform",
   "main": "index.js",
   "scripts": {

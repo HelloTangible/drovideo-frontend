@@ -32,8 +32,8 @@ export class MarkerComponent {
             if (this.editing) {
                 let marker = L.marker(e.latlng, {
                     icon: L.icon({
-                        iconUrl: '../../../node_modules/leaflet/dist/images/marker-icon.png',
-                        shadowUrl: '../../../node_modules/leaflet/dist/images/marker-shadow.png'
+                        iconUrl: './img/marker-icon.png',
+                        shadowUrl: './img/marker-shadow.png'
                     }),
                     draggable: true
                 })

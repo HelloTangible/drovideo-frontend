@@ -5,3 +5,15 @@ main {
   margin-top: 50px;
   display: block;
 }
+
+body {
+    margin:0;
+    padding:0;
+}
+
+#map {
+    position:absolute;
+    top:50px;
+    bottom:0;
+    width:100%;
+}

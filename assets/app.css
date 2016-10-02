@@ -1,7 +1,3 @@
-body {
-    background: #0147A7;
-    color: #fff;
-}
 .on-map {
   position: absolute;
   z-index: 100;
@@ -17,3 +13,8 @@ body {
 .leaflet-container {
   cursor: help !important;
 }
+
+/*body {
+    background: #0147A7;
+    color: #fff;
+}*/
