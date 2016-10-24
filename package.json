@@ -1,6 +1,6 @@
 {
   "name": "drovideo-frontend",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Web frontend for Drovideo platform",
   "main": "index.js",
   "scripts": {
@@ -19,14 +19,15 @@
     "@angular/platform-browser": "^2.0.1",
     "@angular/platform-browser-dynamic": "^2.0.1",
     "@angular/router": "^3.0.1",
-    "core-js": "^2.4.1",
-    "rxjs": "5.0.0-beta.12",
-    "zone.js": "^0.6.25",
+    "angular2-jwt": "^0.1.24",
     "bootstrap": "^3.3.6",
+    "core-js": "^2.4.1",
     "font-awesome": "^4.5.0",
     "leaflet": "^0.7.7",
     "ng2-bootstrap": "^1.1.5",
-    "reflect-metadata": "0.1.8"
+    "reflect-metadata": "0.1.8",
+    "rxjs": "5.0.0-beta.12",
+    "zone.js": "^0.6.25"
   },
   "devDependencies": {
     "angular2-template-loader": "^0.4.0",

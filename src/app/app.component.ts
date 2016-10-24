@@ -3,20 +3,21 @@ import {NavigatorComponent} from './navigator/navigator.component';
 import {MarkerComponent} from './marker/marker.component';
 import {MapService} from './../services/map.service';
 import {GeocodingService} from './../services/geocoding.service';
+import {Auth} from '../services/auth.service';
 import {Location} from './../core/location.class';
 
 import '../styles/main.css';
 
 @Component({
   selector: 'my-app',
+  providers: [ Auth ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent { 
   @ViewChild(MarkerComponent) markerComponent:MarkerComponent;
 
-    constructor(private mapService: MapService, private geocoder: GeocodingService) {
-    }
+    constructor(private mapService: MapService, private geocoder: GeocodingService, private auth: Auth) {}
 
     ngOnInit() {
         var map = new L.Map('map', {

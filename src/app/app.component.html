@@ -1,15 +1,21 @@
 <nav class="navbar nav-default navbar-fixed-top" role="navigation">
-    <div class="navbar-header">
-        <a class="navbar-brand" href="#" scroll-to="welcome" offset="50"><span>Drovideo - The Drone sharing community</span></a>
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#" scroll-to="welcome" offset="50"><span>Drovideo - The Drone sharing community</span></a>
+            <button class="btn btn-primary btn-margin" (click)="auth.login()" *ngIf="!auth.authenticated()">Log In</button>
+            <button class="btn btn-primary btn-margin" (click)="auth.logout()" *ngIf="auth.authenticated()">Log Out</button>
+        </div>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-left">
             <li><a href="https:://twitter.com/drovideo" target="_blank">Twitter</a></li>
         </ul>
     </div>
+    
 </nav>
 
-<main>
+<main class="container">
+  <router-outlet></router-outlet>
   <div id="map">
     <navigator></navigator>
     <marker></marker>

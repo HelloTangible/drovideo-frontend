@@ -11,6 +11,7 @@ import 'rxjs';
 // You can import js, ts, css, sass, ...
 
 import 'leaflet';
+import 'angular2-jwt';
 import 'reflect-metadata';
 
 require('../node_modules/bootstrap/dist/css/bootstrap.css');
