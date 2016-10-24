@@ -6,15 +6,9 @@
             <button class="btn btn-primary btn-margin" (click)="auth.logout()" *ngIf="auth.authenticated()">Log Out</button>
         </div>
     </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-left">
-            <li><a href="https:://twitter.com/drovideo" target="_blank">Twitter</a></li>
-        </ul>
-    </div>
-    
 </nav>
 
-<main class="container">
+<main>
   <router-outlet></router-outlet>
   <div id="map">
     <navigator></navigator>
