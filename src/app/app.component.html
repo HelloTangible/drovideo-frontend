@@ -38,7 +38,7 @@
                         <li routerLinkActive="active"><a routerLink="/home">HOME</a></li>
                         <li><a (click)="auth.login()" *ngIf="!auth.authenticated()">LOG IN</a></li>
                         <li><a (click)="auth.logout()" *ngIf="auth.authenticated()">LOG OUT</a></li>
-                        <li routerLinkActive="active"><a routerLink="/features">FEATURED</a></li>
+                        <li routerLinkActive="active"><a routerLink="/featured">FEATURED</a></li>
                         <li routerLinkActive="active"><a routerLink="/map">MAP</a></li>
                         <li routerLinkActive="active"><a routerLink="/add-video" >ADD VIDEO</a></li>
                     </ul>
