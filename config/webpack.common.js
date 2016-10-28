@@ -32,11 +32,11 @@ module.exports = {
         test: /\.(png|jpe?g|gif|svg)$/,
         loader: 'file?name=img/[name].[hash].[ext]'
       },
-      { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/, loader: "file?name=fonts/[name].[hash].[ext]" },
-      { test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/, loader: "file?name=fonts/[name].[hash].[ext]" },
-      { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: "file?name=fonts/[name].[hash].[ext]" },
-      { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: "file?name=fonts/[name].[hash].[ext]" },
-      { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: "file?name=fonts/[name].[hash].[ext]" },
+      { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/, loader: "file?name=fonts/[name].[ext]&limit=10000&mimetype=application/font-woff" },
+      { test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/, loader: "file?name=fonts/[name].[ext]&limit=10000&mimetype=application/font-woff2" },
+      { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: "file?name=fonts/[name].[ext]&limit=10000&mimetype=application/octet-stream" },
+      { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: "file?name=fonts/[name].[ext]" },
+      { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: "file?name=fonts/[name].[ext]&limit=10000&mimetype=image/svg+xml" },
       {
         test: /\.css$/,
         exclude: helpers.root('src', 'app'),
@@ -45,7 +45,7 @@ module.exports = {
       {
         test: /\.css$/,
         include: helpers.root('src', 'app'),
-        loader: 'raw'
+        loaders: ['to-string', 'css?']
       }
     ],
     noParse: [ path.join(__dirname, 'node_modules', 'angular2', 'bundles') ]
@@ -58,6 +58,12 @@ module.exports = {
     // }),
     new webpack.optimize.CommonsChunkPlugin({
       name: ['app', 'vendor', 'polyfills']
+    }),
+    
+    new webpack.ProvidePlugin({
+      jQuery: 'jquery',
+      $: 'jquery',
+      jquery: 'jquery'
     }),
 
     new HtmlWebpackPlugin({
