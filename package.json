@@ -1,6 +1,6 @@
 {
   "name": "drovideo-frontend",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Web frontend for Drovideo platform",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "test": "karma start",
     "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
     "postinstall": "typings install",
-    "watch": "webpack --progress --colors --watch"
+    "watch": "webpack --inline --progress --colors --watch"
   },
   "dependencies": {
     "@angular/common": "^2.0.1",
