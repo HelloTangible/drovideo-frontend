@@ -26,11 +26,15 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        loader: 'html'
+        loader: 'html?attrs[]=source:src&attrs[]=video:poster&attrs[]=img:src'
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/,
         loader: 'file?name=img/[name].[hash].[ext]'
+      },
+      {
+        test: /\.mp4$/,
+        loader: 'url?limit=10000&mimetype=video/mp4'
       },
       { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/, loader: "file?name=fonts/[name].[ext]&limit=10000&mimetype=application/font-woff" },
       { test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/, loader: "file?name=fonts/[name].[ext]&limit=10000&mimetype=application/font-woff2" },
