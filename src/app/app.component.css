@@ -92,7 +92,7 @@ video#bgvid {
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     
-    background: url('../images/venice.png') no-repeat center center fixed;
+    background: url('../images/drone-still.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -127,7 +127,7 @@ video#bgvid {
     top: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {  
     #templatemo-carousel .carousel-caption p {
         margin-bottom: 20px;
         line-height: 1.4;
@@ -141,22 +141,17 @@ video#bgvid {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+    #templatemo-carousel {
+        background: url('../images/drone-still.jpg') #000 no-repeat center center fixed;
+    }
+
+    #bgvid {
+        display: none;
+    }
+    
     #templatemo-carousel .carousel-caption {
         padding-bottom: 120px;
-    }
-}
-
-@media (max-width: 1024px) {
-    #templatemo-carousel {
-        background: url('../images/SF-drone.gif') no-repeat center center; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        overflow-x: hidden;
-        margin-bottom:0;
-        height: 500px;
     }
 }
 

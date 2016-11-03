@@ -36,6 +36,10 @@ module.exports = {
         test: /\.mp4$/,
         loader: 'url?limit=10000&mimetype=video/mp4'
       },
+      {
+        test: /\.webm$/,
+        loader: 'url?limit=10000&mimetype=video/webm'
+      },
       { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/, loader: "file?name=fonts/[name].[ext]&limit=10000&mimetype=application/font-woff" },
       { test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/, loader: "file?name=fonts/[name].[ext]&limit=10000&mimetype=application/font-woff2" },
       { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: "file?name=fonts/[name].[ext]&limit=10000&mimetype=application/octet-stream" },
