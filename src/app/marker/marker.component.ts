@@ -6,8 +6,7 @@ import {Map, LeafletMouseEvent, Marker} from 'leaflet';
     selector: 'marker',
     templateUrl: './marker.component.html',
     styleUrls: [
-        './marker.component.css',
-        '../../styles/main.css'
+        './marker.component.css'
     ],
     providers: []
 })

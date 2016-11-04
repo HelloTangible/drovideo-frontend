@@ -7,13 +7,13 @@ import {Auth} from '../../services/auth.service';
 import {Location} from '../../core/location.class';
 
 @Component({
-  selector: 'map',
+  selector: 'page-main',
   providers: [ Auth ],
+  styleUrls: ['./map.component.css'],
   template: `
-    <div id="map">
-        <navigator></navigator>
-        <marker></marker>
-    </div>
+    <navigator></navigator>
+    <marker></marker>
+    <div id="map"></div>
   `
 })
 export class MapComponent { 

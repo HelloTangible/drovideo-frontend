@@ -16,7 +16,10 @@
   cursor: help !important;
 }
 
-/*body {
-    background: #0147A7;
-    color: #fff;
-}*/
+#map {
+    top:20px;
+    bottom:0;
+    width:100%;
+    position: relative;
+    height: 2048px;
+}

@@ -1,8 +1,6 @@
 import {Component, ViewChild} from '@angular/core';
 import {Auth} from '../services/auth.service';
 
-import '../styles/main.css';
-
 @Component({
   selector: 'my-app',
   providers: [ Auth ],

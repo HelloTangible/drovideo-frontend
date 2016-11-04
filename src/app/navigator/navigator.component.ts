@@ -8,8 +8,7 @@ import {Map} from 'leaflet';
     selector: 'navigator',
     templateUrl: './navigator.component.html',
     styleUrls: [
-        './navigator.component.css',
-        '../../styles/main.css'
+        './navigator.component.css'
     ],
     providers: []
 })
